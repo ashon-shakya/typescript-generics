@@ -1,4 +1,5 @@
 // Constraints in Generics Example
+
 interface Lengthwise {
     length: number;
 }
