@@ -10,12 +10,12 @@ function generifFunction<T>(arg: T): T {
 }
 
 // displayOutput(generifFunction<string>("myString"));
-
 // displayOutput(generifFunction<number>(100).toString());
 
 
 // Generic Classes Example
 
+/*
 class GenericNum<T> {
     zeroValue: T;
     add: (x: T, y: T) => T;
@@ -31,5 +31,23 @@ console.log(myGenericNumber.add(5, 10)); // 15
 
 displayOutput(myGenericNumber.add(5, 10));
 
+*/
 
+// Constraint
 
+/*
+
+interface LengthConstraint {
+    length: number;
+}
+
+function logLength<T extends LengthConstraint>(arg: T): number {
+    console.log(arg.length);
+    return arg.length;
+}
+
+displayOutput(logLength({ length: 10, value: 3 }));
+displayOutput(logLength("Hello World"));
+displayOutput(logLength(["apple"]));
+
+*/
